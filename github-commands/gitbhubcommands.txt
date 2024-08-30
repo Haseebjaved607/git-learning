@@ -1,0 +1,78 @@
+
+cd your_project_directory it mean that you have to open that folder in vs or cmd to perform these operation
+### **1. Create a New Repository and Push to GitHub**
+
+#### **Cmd & PowerShell:**
+```bash
+cd your_project_directory
+git init
+git remote add origin https://github.com/yourusername/repo-name.git
+git add .
+git commit -m "Initial commit"
+git push -u origin main
+```
+
+### **2. Push an Existing Folder to an Existing Repository**
+in this you will navigate to the main folder in which you want to add a new folder
+#### **Cmd & PowerShell:**
+```bash
+cd your_project_directory
+git add .
+git commit -m "Added new folder"
+git push
+```
+
+### **3. Delete a Folder from GitHub**
+
+#### **Cmd:**
+```bash
+rmdir /S /Q foldername    # Delete locally
+git rm -r foldername      # Remove from Git tracking
+git commit -m "Deleted foldername"
+git push
+```
+
+#### **PowerShell:**
+```bash
+Remove-Item -Recurse -Force foldername  # Delete locally
+git rm -r foldername                   # Remove from Git tracking
+git commit -m "Deleted foldername"
+git push
+```
+
+### **4. Delete a File from GitHub**
+
+#### **Cmd:**
+```bash
+del filename.ext          # Delete locally
+git rm filename.ext       # Remove from Git tracking
+git commit -m "Deleted filename.ext"
+git push
+```
+
+#### **PowerShell:**
+```bash
+Remove-Item filename.ext  # Delete locally
+git rm filename.ext       # Remove from Git tracking
+git commit -m "Deleted filename.ext"
+git push
+```
+
+### **5. Other Basic Operations**
+
+#### **Clone a Repository**
+```bash
+git clone https://github.com/yourusername/repo-name.git
+```
+
+#### **Check Status**
+```bash
+git status
+```
+
+#### **Pull Updates from GitHub**
+```bash
+git pull
+```
+
+These sequences will fully perform each operation from your local machine to your GitHub repository, ensuring everything is synced correctly.
