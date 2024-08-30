@@ -20,8 +20,7 @@ cd your_project_directory
 git add .
 git commit -m "Added new folder"
 git push
-```
-
+```nl"/K
 ### **3. Delete a Folder from GitHub**
 
 #### **Cmd:**
